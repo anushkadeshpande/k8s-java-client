@@ -1,7 +1,216 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>k8s-fabric8</groupId>
 	<artifactId>k8s-fabric8</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>k8s-fabric8</name>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/io.fabric8/kubernetes-client-api -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-client-api</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.fabric8/istio-model-v1beta1 -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>istio-model-v1beta1</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.fabric8/istio-model-v1alpha3 -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>istio-model-v1alpha3</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.fabric8/kubernetes-model-core -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-model-core</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.fabric8/kubernetes-model-gatewayapi -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-model-gatewayapi</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.fabric8/kubernetes-model-resource -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-model-resource</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.fabric8/kubernetes-model-common -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-model-common</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.fabric8/kubernetes-model-rbac -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-model-rbac</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.fabric8/kubernetes-model-admissionregistration -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-model-admissionregistration</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.fabric8/kubernetes-model-apps -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-model-apps</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.fabric8/kubernetes-model-autoscaling -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-model-autoscaling</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.fabric8/kubernetes-model-apiextensions -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-model-apiextensions</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.fabric8/kubernetes-model-batch -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-model-batch</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.fabric8/kubernetes-model-certificates -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-model-certificates</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.fabric8/kubernetes-model-coordination -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-model-coordination</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.fabric8/kubernetes-model-discovery -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-model-discovery</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.fabric8/kubernetes-model-events -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-model-events</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.fabric8/kubernetes-model-extensions -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-model-extensions</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.fabric8/kubernetes-model-flowcontrol -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-model-flowcontrol</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.fabric8/kubernetes-model-networking -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-model-networking</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.fabric8/kubernetes-model-metrics -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-model-metrics</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.fabric8/kubernetes-model-policy -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-model-policy</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.fabric8/kubernetes-model-scheduling -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-model-scheduling</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.fabric8/kubernetes-model-storageclass -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-model-storageclass</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.fabric8/kubernetes-model-node -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-model-node</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.snakeyaml/snakeyaml-engine -->
+		<dependency>
+			<groupId>org.snakeyaml</groupId>
+			<artifactId>snakeyaml-engine</artifactId>
+			<version>2.7</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>2.1.0-alpha1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.fabric8/istio-client -->
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>istio-client</artifactId>
+			<version>6.12.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.17.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.17.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.17.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.datatype/jackson-datatype-jsr310 -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.datatype</groupId>
+			<artifactId>jackson-datatype-jsr310</artifactId>
+			<version>2.17.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-yaml</artifactId>
+			<version>2.17.0</version>
+		</dependency>
+
+	</dependencies>
 </project>

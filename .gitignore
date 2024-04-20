@@ -1,2 +1,4 @@
 .settings
+.vscode
 /target
+kubeconfig
